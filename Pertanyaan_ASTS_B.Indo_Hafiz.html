@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal Bahasa Indonesia Kelas 4</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .question-card {
+            transition: transform 0.2s;
+        }
+        .question-card:hover {
+            transform: translateY(-5px);
+        }
+        .correct-answer {
+            background-color: #e0f8e9;
+            border-left: 5px solid #34d399;
+        }
+        .wrong-answer {
+            background-color: #fee2e2;
+            border-left: 5px solid #f87171;
+        }
+    </style>
+</head>
+<body class="bg-blue-50 text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-8">
+        <!-- Header -->
+        <div class="text-center bg-white p-6 rounded-2xl shadow-lg mb-8 border-b-8 border-blue-400">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600">Latihan Soal Bahasa Indonesia</h1>
+            <p class="text-lg text-gray-500 mt-2">Untuk Kelas 4 Sekolah Dasar</p>
+        </div>
+
+        <div id="quiz-container">
+            <!-- Instructions -->
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded-lg mb-8" role="alert">
+                <p class="font-bold">Halo, Jagoan!</p>
+                <p>Ayo kita berlatih! Baca setiap soal dengan teliti dan pilih jawaban yang paling tepat ya. Semangat!</p>
+            </div>
+
+            <form id="quiz-form">
+                <!-- I. Pilihan Ganda -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg mb-8 question-card">
+                    <h2 class="text-2xl font-bold text-blue-500 border-b-2 pb-2 mb-4">I. Pilihan Ganda</h2>
+                    <p class="mb-6 text-gray-600">Pilihlah satu jawaban yang paling benar!</p>
+                    
+                    <div class="space-y-6">
+                        <!-- Soal 1 -->
+                        <div>
+                            <p class="font-semibold mb-2">1. Orang atau hewan yang menjadi pelaku dalam sebuah cerita disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg1" value="a" class="mr-3"> a. Tokoh</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg1" value="b" class="mr-3"> b. Latar</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg1" value="c" class="mr-3"> c. Alur</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg1" value="d" class="mr-3"> d. Amanat</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div>
+                            <p class="font-semibold mb-2">2. Ayah membaca koran di teras. Kalimat tersebut merupakan contoh kalimat...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg2" value="a" class="mr-3"> a. Intransitif</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg2" value="b" class="mr-3"> b. Transitif</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg2" value="c" class="mr-3"> c. Perintah</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg2" value="d" class="mr-3"> d. Tanya</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div>
+                            <p class="font-semibold mb-2">3. Adik menangis. Kalimat tersebut merupakan contoh kalimat...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg3" value="a" class="mr-3"> a. Transitif</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg3" value="b" class="mr-3"> b. Perintah</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg3" value="c" class="mr-3"> c. Intransitif</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg3" value="d" class="mr-3"> d. Majemuk</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 4 -->
+                        <div>
+                            <p class="font-semibold mb-2">4. Kata berikut yang termasuk kata homonim adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg4" value="a" class="mr-3"> a. Bulan</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg4" value="b" class="mr-3"> b. Matahari</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg4" value="c" class="mr-3"> c. Bintang</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg4" value="d" class="mr-3"> d. Pelangi</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div>
+                            <p class="font-semibold mb-2">5. Kata dasar 'baca' jika diberi imbuhan me- akan menjadi...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg5" value="a" class="mr-3"> a. Mebaca</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg5" value="b" class="mr-3"> b. Membaca</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg5" value="c" class="mr-3"> c. Dibaca</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg5" value="d" class="mr-3"> d. Terbaca</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div>
+                            <p class="font-semibold mb-2">6. Kalimat yang berisi pendapat tentang hemat energi adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg6" value="a" class="mr-3"> a. Menurut saya, mematikan lampu saat tidak dipakai adalah cara mudah menghemat energi.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg6" value="b" class="mr-3"> b. Energi listrik berasal dari pembangkit listrik.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg6" value="c" class="mr-3"> c. Ibu memasak nasi menggunakan penanak nasi listrik.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg6" value="d" class="mr-3"> d. Indonesia memiliki banyak sumber energi.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div>
+                             <p class="font-semibold mb-2">7. "Bisa ular itu sangat berbahaya, tetapi dia juga bisa menyembuhkan penyakit." Kalimat tersebut mengandung kata homonim, yaitu...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg7" value="a" class="mr-3"> a. Ular</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg7" value="b" class="mr-3"> b. Berbahaya</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg7" value="c" class="mr-3"> c. Bisa</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg7" value="d" class="mr-3"> d. Penyakit</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 8 -->
+                        <div>
+                            <p class="font-semibold mb-2">8. Di bawah ini yang merupakan contoh kalimat majemuk setara adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg8" value="a" class="mr-3"> a. Kakak sedang belajar.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg8" value="b" class="mr-3"> b. Ayah pergi ke kantor dan ibu memasak di dapur.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg8" value="c" class="mr-3"> c. Anak yang rajin itu disenangi guru.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg8" value="d" class="mr-3"> d. Dia tidak masuk sekolah karena sakit.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div>
+                            <p class="font-semibold mb-2">9. Kata penghubung yang biasa digunakan dalam kalimat majemuk setara adalah, kecuali...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg9" value="a" class="mr-3"> a. dan</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg9" value="b" class="mr-3"> b. atau</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg9" value="c" class="mr-3"> c. tetapi</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg9" value="d" class="mr-3"> d. karena</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div>
+                            <p class="font-semibold mb-2">10. Penulisan imbuhan me- yang tepat terdapat pada kalimat...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg10" value="a" class="mr-3"> a. Ibu mecuci piring di dapur.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg10" value="b" class="mr-3"> b. Ayah menonton berita di televisi.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg10" value="c" class="mr-3"> c. Kakak metulis surat untuk nenek.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="radio" name="pg10" value="d" class="mr-3"> d. Paman mesapu halaman rumah.</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- II. Pilihan Ganda Kompleks -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg mb-8 question-card">
+                    <h2 class="text-2xl font-bold text-green-500 border-b-2 pb-2 mb-4">II. Pilihan Ganda Kompleks</h2>
+                    <p class="mb-6 text-gray-600">Bacalah teks berikut untuk menjawab soal nomor 11-15. Jawaban benar bisa lebih dari satu!</p>
+                    
+                    <div class="prose max-w-none p-4 bg-gray-50 rounded-lg border mb-6">
+                        <h4 class="font-bold">Kisah Kancil dan Buaya</h4>
+                        <p>Di sebuah hutan yang lebat, hiduplah seekor kancil yang sangat cerdik. Suatu hari, Kancil merasa lapar dan ingin menyeberangi sungai untuk memakan buah-buahan ranum di seberang. Namun, sungai itu dihuni oleh banyak buaya ganas.</p>
+                        <p>Kancil tidak kehabisan akal. Ia berteriak memanggil para buaya. "Hai, Buaya! Aku diperintahkan Raja Hutan untuk menghitung jumlah kalian semua. Raja akan memberikan hadiah daging segar!" seru Kancil.</p>
+                        <p>Para buaya yang serakah pun senang mendengarnya. Mereka segera berbaris rapi dari tepi sungai satu ke tepi lainnya. Kancil pun melompat dari satu punggung buaya ke punggung buaya lainnya sambil pura-pura menghitung. "Satu, dua, tiga..." ucapnya. Sesampainya di seberang, Kancil tertawa dan berterima kasih kepada para buaya yang telah membantunya menyeberang. Para buaya pun sadar telah ditipu dan merasa sangat marah.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Soal 11 -->
+                        <div>
+                            <p class="font-semibold mb-2">11. Siapa saja tokoh yang ada dalam cerita tersebut?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk11" value="a" class="mr-3"> a. Kancil</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk11" value="b" class="mr-3"> b. Raja Hutan</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk11" value="c" class="mr-3"> c. Buaya</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk11" value="d" class="mr-3"> d. Monyet</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 12 -->
+                        <div>
+                            <p class="font-semibold mb-2">12. Sifat yang dimiliki oleh Kancil adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk12" value="a" class="mr-3"> a. Cerdik</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk12" value="b" class="mr-3"> b. Serakah</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk12" value="c" class="mr-3"> c. Banyak akal</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk12" value="d" class="mr-3"> d. Pemarah</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 13 -->
+                        <div>
+                            <p class="font-semibold mb-2">13. Mengapa Kancil ingin menyeberangi sungai?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk13" value="a" class="mr-3"> a. Karena ingin bermain dengan buaya.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk13" value="b" class="mr-3"> b. Karena lapar.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk13" value="c" class="mr-3"> c. Karena ingin makan buah-buahan di seberang sungai.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk13" value="d" class="mr-3"> d. Karena diperintah Raja Hutan.</label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 14 -->
+                        <div>
+                            <p class="font-semibold mb-2">14. Bagaimana cara Kancil menyeberangi sungai?</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk14" value="a" class="mr-3"> a. Dengan berenang.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk14" value="b" class="mr-3"> b. Dengan menipu para buaya untuk berbaris.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk14" value="c" class="mr-3"> c. Dengan melompat di atas punggung buaya.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk14" value="d" class="mr-3"> d. Dengan meminta bantuan Raja Hutan.</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Soal 15 -->
+                        <div>
+                            <p class="font-semibold mb-2">15. Pernyataan yang benar berdasarkan cerita adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk15" value="a" class="mr-3"> a. Buaya berhasil memakan kancil.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk15" value="b" class="mr-3"> b. Kancil berhasil menyeberangi sungai.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk15" value="c" class="mr-3"> c. Para buaya merasa senang karena dibantu Kancil.</label>
+                                <label class="flex items-center p-3 rounded-lg border hover:bg-gray-100 cursor-pointer"><input type="checkbox" name="pgk15" value="d" class="mr-3"> d. Para buaya marah karena merasa ditipu.</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- III. Benar atau Salah -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg mb-8 question-card">
+                    <h2 class="text-2xl font-bold text-purple-500 border-b-2 pb-2 mb-4">III. Benar atau Salah</h2>
+                    <p class="mb-6 text-gray-600">Tentukan apakah pernyataan berikut Benar atau Salah!</p>
+                    
+                    <div class="space-y-4">
+                        <!-- Soal 16 -->
+                        <div class="flex items-center justify-between p-3 border rounded-lg">
+                            <p>16. Tokoh protagonis adalah tokoh yang memiliki sifat baik.</p>
+                            <div class="flex space-x-2">
+                                <label><input type="radio" name="bs16" value="Benar" class="mr-1"> Benar</label>
+                                <label><input type="radio" name="bs16" value="Salah" class="mr-1"> Salah</label>
+                            </div>
+                        </div>
+                        <!-- Soal 17 -->
+                        <div class="flex items-center justify-between p-3 border rounded-lg">
+                            <p>17. Kalimat intransitif selalu membutuhkan objek.</p>
+                            <div class="flex space-x-2">
+                                <label><input type="radio" name="bs17" value="Benar" class="mr-1"> Benar</label>
+                                <label><input type="radio" name="bs17" value="Salah" class="mr-1"> Salah</label>
+                            </div>
+                        </div>
+                        <!-- Soal 18 -->
+                        <div class="flex items-center justify-between p-3 border rounded-lg">
+                            <p>18. Kata 'paku' (alat) dan 'paku' (tanaman) adalah homonim.</p>
+                            <div class="flex space-x-2">
+                                <label><input type="radio" name="bs18" value="Benar" class="mr-1"> Benar</label>
+                                <label><input type="radio" name="bs18" value="Salah" class="mr-1"> Salah</label>
+                            </div>
+                        </div>
+                        <!-- Soal 19 -->
+                        <div class="flex items-center justify-between p-3 border rounded-lg">
+                            <p>19. Kata 'atau' digunakan untuk menyatakan pilihan.</p>
+                            <div class="flex space-x-2">
+                                <label><input type="radio" name="bs19" value="Benar" class="mr-1"> Benar</label>
+                                <label><input type="radio" name="bs19" value="Salah" class="mr-1"> Salah</label>
+                            </div>
+                        </div>
+                        <!-- Soal 20 -->
+                        <div class="flex items-center justify-between p-3 border rounded-lg">
+                            <p>20. Imbuhan me- pada kata 'sapu' menjadi 'mesapu'.</p>
+                            <div class="flex space-x-2">
+                                <label><input type="radio" name="bs20" value="Benar" class="mr-1"> Benar</label>
+                                <label><input type="radio" name="bs20" value="Salah" class="mr-1"> Salah</label>
+                            </div>
+                        </div>
+                         <!-- Soal 21 -->
+                        <div class="flex items-center justify-between p-3 border rounded-lg">
+                            <p>21. Kancil berhasil menipu buaya dalam cerita di atas.</p>
+                            <div class="flex space-x-2">
+                                <label><input type="radio" name="bs21" value="Benar" class="mr-1"> Benar</label>
+                                <label><input type="radio" name="bs21" value="Salah" class="mr-1"> Salah</label>
+                            </div>
+                        </div>
+                         <!-- Soal 22 -->
+                        <div class="flex items-center justify-between p-3 border rounded-lg">
+                            <p>22. Buaya dalam cerita di atas memiliki sifat yang cerdik.</p>
+                            <div class="flex space-x-2">
+                                <label><input type="radio" name="bs22" value="Benar" class="mr-1"> Benar</label>
+                                <label><input type="radio" name="bs22" value="Salah" class="mr-1"> Salah</label>
+                            </div>
+                        </div>
+                         <!-- Soal 23 -->
+                        <div class="flex items-center justify-between p-3 border rounded-lg">
+                            <p>23. Latar tempat cerita 'Kancil dan Buaya' adalah di sekolah.</p>
+                            <div class="flex space-x-2">
+                                <label><input type="radio" name="bs23" value="Benar" class="mr-1"> Benar</label>
+                                <label><input type="radio" name="bs23" value="Salah" class="mr-1"> Salah</label>
+                            </div>
+                        </div>
+                         <!-- Soal 24 -->
+                        <div class="flex items-center justify-between p-3 border rounded-lg">
+                            <p>24. Kalimat 'Ibu memasak' adalah kalimat transitif.</p>
+                            <div class="flex space-x-2">
+                                <label><input type="radio" name="bs24" value="Benar" class="mr-1"> Benar</label>
+                                <label><input type="radio" name="bs24" value="Salah" class="mr-1"> Salah</label>
+                            </div>
+                        </div>
+                         <!-- Soal 25 -->
+                        <div class="flex items-center justify-between p-3 border rounded-lg">
+                            <p>25. Tokoh tritagonis adalah tokoh penengah.</p>
+                            <div class="flex space-x-2">
+                                <label><input type="radio" name="bs25" value="Benar" class="mr-1"> Benar</label>
+                                <label><input type="radio" name="bs25" value="Salah" class="mr-1"> Salah</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IV. Isian -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg mb-8 question-card">
+                    <h2 class="text-2xl font-bold text-red-500 border-b-2 pb-2 mb-4">IV. Isian</h2>
+                    <p class="mb-6 text-gray-600">Isilah titik-titik di bawah ini dengan jawaban yang tepat!</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                            <label for="isian26" class="w-full sm:w-auto mb-2 sm:mb-0 sm:mr-2">26. Kalimat yang memerlukan objek disebut kalimat...</label>
+                            <input type="text" id="isian26" name="isian26" class="border rounded-lg p-2 w-full sm:w-1/2">
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                            <label for="isian27" class="w-full sm:w-auto mb-2 sm:mb-0 sm:mr-2">27. Kalimat yang tidak memerlukan objek disebut kalimat...</label>
+                            <input type="text" id="isian27" name="isian27" class="border rounded-lg p-2 w-full sm:w-1/2">
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                            <label for="isian28" class="w-full sm:w-auto mb-2 sm:mb-0 sm:mr-2">28. Tokoh yang menjadi penengah dalam cerita disebut tokoh...</label>
+                            <input type="text" id="isian28" name="isian28" class="border rounded-lg p-2 w-full sm:w-1/2">
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                            <label for="isian29" class="w-full sm:w-auto mb-2 sm:mb-0 sm:mr-2">29. Tokoh yang berperan jahat atau menjadi lawan tokoh utama disebut tokoh...</label>
+                            <input type="text" id="isian29" name="isian29" class="border rounded-lg p-2 w-full sm:w-1/2">
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                            <label for="isian30" class="w-full sm:w-auto mb-2 sm:mb-0 sm:mr-2">30. Tokoh yang paling banyak diceritakan dalam sebuah cerita disebut tokoh...</label>
+                            <input type="text" id="isian30" name="isian30" class="border rounded-lg p-2 w-full sm:w-1/2">
+                        </div>
+                         <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                            <label for="isian31" class="w-full sm:w-auto mb-2 sm:mb-0 sm:mr-2">31. Di dalam cerita 'Kancil dan Buaya', yang menjadi tokoh utama adalah...</label>
+                            <input type="text" id="isian31" name="isian31" class="border rounded-lg p-2 w-full sm:w-1/2">
+                        </div>
+                         <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                            <label for="isian32" class="w-full sm:w-auto mb-2 sm:mb-0 sm:mr-2">32. Kata penghubung 'tetapi' digunakan untuk menyatakan...</label>
+                            <input type="text" id="isian32" name="isian32" class="border rounded-lg p-2 w-full sm:w-1/2">
+                        </div>
+                         <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                            <label for="isian33" class="w-full sm:w-auto mb-2 sm:mb-0 sm:mr-2">33. Imbuhan me- pada kata 'tendang' akan menjadi...</label>
+                            <input type="text" id="isian33" name="isian33" class="border rounded-lg p-2 w-full sm:w-1/2">
+                        </div>
+                         <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                            <label for="isian34" class="w-full sm:w-auto mb-2 sm:mb-0 sm:mr-2">34. Kata yang memiliki tulisan dan bunyi sama namun artinya berbeda disebut...</label>
+                            <input type="text" id="isian34" name="isian34" class="border rounded-lg p-2 w-full sm:w-1/2">
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                            <label for="isian35" class="w-full sm:w-auto mb-2 sm:mb-0 sm:mr-2">35. Buku yang berisi kumpulan kosakata beserta artinya adalah...</label>
+                            <input type="text" id="isian35" name="isian35" class="border rounded-lg p-2 w-full sm:w-1/2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- V. Uraian -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg mb-8 question-card">
+                    <h2 class="text-2xl font-bold text-orange-500 border-b-2 pb-2 mb-4">V. Uraian</h2>
+                    <p class="mb-6 text-gray-600">Jawablah pertanyaan-pertanyaan di bawah ini dengan jelas!</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label for="uraian36" class="font-semibold block mb-2">36. Jelaskan bagian-bagian dari kalimat transitif! (Subjek, Predikat, Objek, dan Keterangan)</label>
+                            <textarea id="uraian36" name="uraian36" rows="4" class="w-full border rounded-lg p-2"></textarea>
+                        </div>
+                        <div>
+                            <label for="uraian37" class="font-semibold block mb-2">37. Mengapa kita perlu menggunakan Kamus Besar Bahasa Indonesia (KBBI)?</label>
+                            <textarea id="uraian37" name="uraian37" rows="4" class="w-full border rounded-lg p-2"></textarea>
+                        </div>
+                        <div>
+                            <label for="uraian38" class="font-semibold block mb-2">38. Berilah imbuhan me- pada kata di bawah ini dan buatlah kalimatnya! (a. pukul, b. sapu, c. lihat)</label>
+                            <textarea id="uraian38" name="uraian38" rows="4" class="w-full border rounded-lg p-2"></textarea>
+                        </div>
+                        <div>
+                            <label for="uraian39" class="font-semibold block mb-2">39. Buatlah masing-masing satu kalimat menggunakan kata hubung 'dan', 'atau', dan 'tetapi'!</label>
+                            <textarea id="uraian39" name="uraian39" rows="4" class="w-full border rounded-lg p-2"></textarea>
+                        </div>
+                        <div>
+                            <label for="uraian40" class="font-semibold block mb-2">40. Buatlah sebuah kalimat menggunakan kata homonim 'bulan', dan jelaskan dua arti kata 'bulan' yang kamu maksud!</label>
+                            <textarea id="uraian40" name="uraian40" rows="4" class="w-full border rounded-lg p-2"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-transform transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                        Selesai & Cek Nilai
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Result container -->
+        <div id="result-container" class="hidden text-center bg-white p-6 sm:p-8 rounded-2xl shadow-lg mt-8 border-t-8 border-green-400">
+             <h2 id="result-title" class="text-3xl sm:text-4xl font-bold text-green-600">Hasil Latihanmu!</h2>
+             <div id="score-circle" class="my-6 w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full flex items-center justify-center text-white font-bold text-3xl sm:text-4xl shadow-lg">
+                <span id="score"></span>
+             </div>
+             <p id="score-text" class="text-xl text-gray-700 font-semibold"></p>
+             <p id="feedback-text" class="text-gray-500 mt-2 mb-6"></p>
+
+             <div id="review-section" class="mt-8 text-left">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Yuk, kita lihat pembahasannya!</h3>
+             </div>
+
+             <button onclick="retakeQuiz()" class="mt-8 bg-yellow-500 text-white font-bold py-3 px-8 rounded-full hover:bg-yellow-600 transition-transform transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-300">
+                Coba Lagi!
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const quizForm = document.getElementById('quiz-form');
+        const quizContainer = document.getElementById('quiz-container');
+        const resultContainer = document.getElementById('result-container');
+        const scoreElement = document.getElementById('score');
+        const scoreTextElement = document.getElementById('score-text');
+        const resultTitleElement = document.getElementById('result-title');
+        const feedbackTextElement = document.getElementById('feedback-text');
+        const scoreCircleElement = document.getElementById('score-circle');
+        const reviewSection = document.getElementById('review-section');
+
+        const answers = {
+            pg1: 'a', pg2: 'b', pg3: 'c', pg4: 'a', pg5: 'b',
+            pg6: 'a', pg7: 'c', pg8: 'b', pg9: 'd', pg10: 'b',
+            pgk11: ['a', 'c'], pgk12: ['a', 'c'], pgk13: ['b', 'c'], pgk14: ['b', 'c'], pgk15: ['b', 'd'],
+            bs16: 'Benar', bs17: 'Salah', bs18: 'Benar', bs19: 'Benar', bs20: 'Salah',
+            bs21: 'Benar', bs22: 'Salah', bs23: 'Salah', bs24: 'Salah', bs25: 'Benar',
+            isian26: 'transitif', isian27: 'intransitif', isian28: 'tritagonis',
+            isian29: 'antagonis', isian30: 'utama', isian31: 'kancil',
+            isian32: 'pertentangan', isian33: 'menendang', isian34: 'homonim',
+            isian35: 'kamus',
+        };
+        
+        const explanations = {
+            pg1: 'Tokoh adalah pelaku dalam cerita.',
+            pg2: 'Kalimat transitif adalah kalimat yang membutuhkan objek (Ayah membaca apa? -> koran).',
+            pg3: 'Kalimat intransitif adalah kalimat yang tidak membutuhkan objek.',
+            pg4: 'Bulan bisa berarti satelit bumi atau satuan waktu (30 hari).',
+            pg5: "Imbuhan me- bertemu kata dasar berawalan 'b' menjadi mem-.",
+            pg6: 'Kalimat pendapat biasanya diawali dengan frasa "Menurut saya,".',
+            pg7: 'Kata "bisa" dapat berarti racun atau dapat/mampu.',
+            pg8: 'Kalimat tersebut menghubungkan dua kalimat tunggal dengan kata "dan".',
+            pg9: 'Kata "karena" adalah konjungsi penyebab, bukan untuk kalimat majemuk setara.',
+            pg10: "Imbuhan me- bertemu kata dasar berawalan 't' menjadi men-.",
+            pgk11: 'Tokoh yang muncul dan berinteraksi dalam cerita adalah Kancil dan Buaya. Raja Hutan hanya disebut saja.',
+            pgk12: 'Kancil sangat cerdik dan punya banyak akal untuk menipu buaya.',
+            pgk13: 'Tujuan utama kancil menyeberang adalah karena ia lapar dan ingin makan buah.',
+            pgk14: 'Kancil menipu buaya agar berbaris, lalu ia melompat di atas punggung mereka.',
+            pgk15: 'Kancil selamat sampai seberang, dan para buaya sadar telah ditipu sehingga mereka marah.',
+            bs17: 'Salah, kalimat intransitif justru tidak membutuhkan objek.',
+            bs20: "Salah, imbuhan me- pada kata 'sapu' menjadi 'menyapu'.",
+            bs22: 'Salah, buaya bersifat serakah dan mudah ditipu, sedangkan kancil yang cerdik.',
+            bs23: 'Salah, latar tempatnya adalah di hutan dan sungai.',
+            bs24: "Salah, kalimat 'Ibu memasak' adalah intransitif. Akan menjadi transitif jika ada objek, misal 'Ibu memasak nasi'.",
+            isian32: "Kata hubung 'tetapi' digunakan untuk menyatakan pertentangan atau perbedaan. Contoh: Dia pintar, tetapi malas.",
+            uraian36: '<b>Kunci Jawaban:</b><br><b>- Subjek:</b> Pelaku yang melakukan tindakan (misal: Ibu).<br><b>- Predikat:</b> Tindakan yang dilakukan (misal: memasak).<br><b>- Objek:</b> Sesuatu yang dikenai tindakan (misal: nasi).<br><b>- Keterangan:</b> Menjelaskan di mana, kapan, atau bagaimana (misal: di dapur).',
+            uraian37: '<b>Kunci Jawaban:</b> Untuk mengetahui arti kata yang tidak kita mengerti, mengetahui penulisan kata yang baku, dan menambah kosakata baru.',
+            uraian38: '<b>Kunci Jawaban:</b><br>a. memukul -> Ayah memukul paku dengan palu.<br>b. menyapu -> Kakak menyapu halaman rumah.<br>c. melihat -> Aku melihat pelangi yang indah.',
+            uraian39: '<b>Kunci Jawaban:</b><br><b>- dan:</b> Rina membeli buku dan pensil.<br><b>- atau:</b> Kamu mau minum teh atau kopi?<br><b>- tetapi:</b> Adik ingin ikut, tetapi ia sedang sakit.',
+            uraian40: '<b>Kunci Jawaban:</b><br><b>- Contoh Kalimat:</b> Setiap bulan, kita bisa melihat bulan purnama.<br><b>- Arti 1:</b> Bulan = satuan waktu (sekitar 30 hari).<br><b>- Arti 2:</b> Bulan = satelit alami yang mengorbit bumi.',
+        };
+
+        quizForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let score = 0;
+            let correctCount = 0;
+            let totalQuestions = 35; // PG, PGK, BS, Isian
+
+            reviewSection.innerHTML = '<h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Yuk, kita lihat pembahasannya!</h3>';
+
+            // Check Pilihan Ganda
+            for (let i = 1; i <= 10; i++) {
+                const questionName = `pg${i}`;
+                const userAnswer = quizForm.querySelector(`input[name="${questionName}"]:checked`);
+                const questionElement = userAnswer ? userAnswer.closest('div.space-y-6 > div') : document.querySelector(`input[name="${questionName}"]`).closest('div.space-y-6 > div');
+                
+                let isCorrect = false;
+                if (userAnswer && userAnswer.value === answers[questionName]) {
+                    score += 2; // Bobot nilai 2
+                    correctCount++;
+                    isCorrect = true;
+                }
+                
+                reviewQuestion(questionElement.querySelector('p').textContent, isCorrect, `Jawaban benar: ${answers[questionName].toUpperCase()}`, explanations[questionName]);
+            }
+
+            // Check Pilihan Ganda Kompleks
+            for (let i = 11; i <= 15; i++) {
+                const questionName = `pgk${i}`;
+                const userAnswers = Array.from(quizForm.querySelectorAll(`input[name="${questionName}"]:checked`)).map(el => el.value);
+                const questionElement = document.querySelector(`input[name="${questionName}"]`).closest('div.space-y-6 > div');
+                const correctAnswers = answers[questionName];
+
+                let isFullyCorrect = userAnswers.length === correctAnswers.length && userAnswers.every(val => correctAnswers.includes(val));
+
+                if(isFullyCorrect){
+                    score += 4; // Bobot nilai 4
+                    correctCount++;
+                }
+                
+                reviewQuestion(questionElement.querySelector('p').textContent, isFullyCorrect, `Jawaban benar: ${correctAnswers.join(', ').toUpperCase()}`, explanations[questionName]);
+            }
+
+            // Check Benar Salah
+            for (let i = 16; i <= 25; i++) {
+                const questionName = `bs${i}`;
+                const userAnswer = quizForm.querySelector(`input[name="${questionName}"]:checked`);
+                const questionElement = quizForm.querySelector(`input[name="${questionName}"]`).closest('.border');
+
+                let isCorrect = false;
+                if (userAnswer && userAnswer.value === answers[questionName]) {
+                    score += 2; // Bobot nilai 2
+                    correctCount++;
+                    isCorrect = true;
+                }
+                
+                reviewQuestion(questionElement.querySelector('p').textContent, isCorrect, `Jawaban benar: ${answers[questionName]}`, explanations[questionName]);
+            }
+
+            // Check Isian
+            for (let i = 26; i <= 35; i++) {
+                const questionName = `isian${i}`;
+                const userAnswer = quizForm.querySelector(`input[name="${questionName}"]`).value.trim().toLowerCase();
+                const questionElement = quizForm.querySelector(`input[name="${questionName}"]`).closest('.flex-col');
+                
+                let isCorrect = false;
+                if (userAnswer === answers[questionName]) {
+                    score += 2; // Bobot nilai 2
+                    correctCount++;
+                    isCorrect = true;
+                }
+                
+                reviewQuestion(questionElement.querySelector('label').textContent, isCorrect, `Jawaban benar: ${answers[questionName]}`, explanations[questionName]);
+            }
+            
+            // Handle Uraian (manual check)
+            for (let i = 36; i <= 40; i++) {
+                const questionName = `uraian${i}`;
+                const userAnswer = quizForm.querySelector(`textarea[name="${questionName}"]`).value;
+                const questionLabel = quizForm.querySelector(`label[for="${questionName}"]`).textContent;
+
+                const reviewDiv = document.createElement('div');
+                reviewDiv.className = 'p-4 rounded-lg mb-4 bg-gray-100 border-l-4 border-gray-400';
+                reviewDiv.innerHTML = `
+                    <p class="font-semibold">${questionLabel}</p>
+                    <p class="mt-2 text-blue-700"><b>Jawabanmu:</b> ${userAnswer || "<em>(Tidak dijawab)</em>"}</p>
+                    <p class="mt-2 text-green-700">${explanations[questionName] || ''}</p>
+                    <p class="mt-2 text-sm text-red-600 font-semibold">*Dinilai oleh guru pendamping.</p>
+                `;
+                reviewSection.appendChild(reviewDiv);
+            }
+
+            const finalScore = Math.round((score / 90) * 100); // Total bobot nilai 90 (10*2 + 5*4 + 10*2 + 10*2)
+
+            scoreElement.textContent = finalScore;
+            scoreTextElement.textContent = `Kamu berhasil menjawab ${correctCount} dari ${totalQuestions} soal pilihan!`;
+
+            if (finalScore >= 80) {
+                resultTitleElement.textContent = "Hebat Sekali! 🎉";
+                feedbackTextElement.textContent = "Kamu sungguh luar biasa! Pertahankan terus ya prestasimu.";
+                scoreCircleElement.className = scoreCircleElement.className.replace(/bg-\w+-500/, 'bg-green-500');
+            } else if (finalScore >= 60) {
+                resultTitleElement.textContent = "Bagus! 👍";
+                feedbackTextElement.textContent = "Kerja bagus! Terus berlatih lagi agar semakin paham.";
+                scoreCircleElement.className = scoreCircleElement.className.replace(/bg-\w+-500/, 'bg-blue-500');
+            } else {
+                resultTitleElement.textContent = "Tetap Semangat! 💪";
+                feedbackTextElement.textContent = "Jangan menyerah, ya! Coba perhatikan lagi pembahasannya dan kita coba lagi!";
+                scoreCircleElement.className = scoreCircleElement.className.replace(/bg-\w+-500/, 'bg-red-500');
+            }
+
+            quizContainer.classList.add('hidden');
+            resultContainer.classList.remove('hidden');
+            window.scrollTo(0, 0);
+        });
+
+        function reviewQuestion(question, isCorrect, correctAnswer, explanation) {
+            const reviewDiv = document.createElement('div');
+            reviewDiv.className = `p-4 rounded-lg mb-4 ${isCorrect ? 'correct-answer' : 'wrong-answer'}`;
+
+            let explanationHTML = '';
+            if (!isCorrect && explanation) {
+                explanationHTML = `<p class="mt-2 text-sm text-gray-600"><b>Pembahasan:</b> ${explanation}</p>`;
+            } else if (!isCorrect) {
+                 explanationHTML = `<p class="mt-2 text-sm text-gray-600"><b>Pembahasan:</b> ${correctAnswer}</p>`;
+            }
+
+
+            reviewDiv.innerHTML = `
+                <p class="font-semibold">${question}</p>
+                <p class="mt-2 font-bold">${isCorrect ? 'Jawabanmu Benar!' : `Jawabanmu Salah. ${correctAnswer}`}</p>
+                ${explanationHTML}
+            `;
+            reviewSection.appendChild(reviewDiv);
+        }
+
+        function retakeQuiz() {
+            quizForm.reset();
+            resultContainer.classList.add('hidden');
+            quizContainer.classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
+
+
